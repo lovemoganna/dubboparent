@@ -85,7 +85,7 @@ mvn install//安装模块
 4. 服务消费者，从提供者地址列表中，基于软负载均衡算法，选一台提供者进行调用，如果调用失败，再选另一台调用。
 5. 服务消费者和提供者，在内存中累计调用次数和调用时间，定时每分钟发送一次统计数据到监控中心。
 
-dubbo基于Sock而协议进行通信[Socket协议](https://github.com/lovemoganna/interview/wiki/05-Socket协议)
+dubbo基于Socket协议进行通信[Socket协议](https://github.com/lovemoganna/interview/wiki/05-Socket协议)
 ## zookeeper的了解
 
 注册中心负责服务地址的注册与查找，相当于目录服务，服务提供者和消费者只在启动时与注册中心交互，注册中心不转发请求，压力较小。
